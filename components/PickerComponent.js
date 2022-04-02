@@ -17,7 +17,7 @@ const PickerComponent = ({items, value, setValue}) => {
 };
 
 const styles = StyleSheet.create({
-  container: {width: 200, textAlign: 'left'},
+  container: {width: '100%', textAlign: 'left'},
 });
 
 export default PickerComponent;
