@@ -16,12 +16,7 @@ const PickerComponent = ({callback, items, value, setValue}) => {
           setValue(itemValue);
         }}>
         {items.map((d, i) => (
-          <Picker.Item
-            color="white"
-            key={d + i}
-            label={d.toString()}
-            value={d.toString()}
-          />
+          <Picker.Item key={d + i} label={d.toString()} value={d.toString()} />
         ))}
       </Picker>
     </View>

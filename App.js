@@ -6,7 +6,7 @@ import ButtonComponent from './components/ButtonComponent';
 
 import durations from './utils/utils';
 
-import {StyleSheet, Button, Text, View} from 'react-native';
+import {StyleSheet, Button, Text, View, Platform} from 'react-native';
 
 const App = () => {
   const [inBedDuration, setInBedDuration] = useState('');
@@ -99,8 +99,8 @@ const App = () => {
       </View>
       <View style={styles.calculateBtnContainer}>
         <Button
+          color={Platform.OS === 'ios' ? 'white' : 'dodgerblue'}
           title="Calculate"
-          color="white"
           style={styles.buttonCalculate}
           onPress={calculateAndSend}
           disabled={asleepDuration <= 0 || inBedDuration <= 0}

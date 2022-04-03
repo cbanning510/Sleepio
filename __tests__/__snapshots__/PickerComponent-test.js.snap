@@ -1,61 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "dodgerblue",
-      "textAlign": "left",
-      "width": "100%",
-    }
-  }
->
-  <RNCPicker
-    items={
-      Array [
-        Object {
-          "label": "0",
-          "testID": undefined,
-          "textColor": 4294967295,
-          "value": "0",
-        },
-        Object {
-          "label": "0.5",
-          "testID": undefined,
-          "textColor": 4294967295,
-          "value": "0.5",
-        },
-        Object {
-          "label": "1",
-          "testID": undefined,
-          "textColor": 4294967295,
-          "value": "1",
-        },
-        Object {
-          "label": "1.5",
-          "testID": undefined,
-          "textColor": 4294967295,
-          "value": "1.5",
-        },
-        Object {
-          "label": "2",
-          "testID": undefined,
-          "textColor": 4294967295,
-          "value": "2",
-        },
-      ]
-    }
-    numberOfLines={1}
-    onChange={[Function]}
-    selectedIndex={0}
+<View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "height": 216,
-        },
-        undefined,
-      ]
+      Object {
+        "alignItems": "flex-end",
+        "justifyContent": "center",
+        "opacity": 1,
+      }
     }
-  />
+  >
+    <Text
+      style={
+        Object {
+          "bottom": 12,
+          "color": "dodgerblue",
+          "fontSize": 18,
+          "marginRight": 10,
+          "position": "relative",
+        }
+      }
+    >
+      Done
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "dodgerblue",
+        "textAlign": "left",
+        "width": "100%",
+      }
+    }
+  >
+    <RNCPicker
+      items={
+        Array [
+          Object {
+            "label": "0",
+            "testID": undefined,
+            "textColor": undefined,
+            "value": "0",
+          },
+          Object {
+            "label": "0.5",
+            "testID": undefined,
+            "textColor": undefined,
+            "value": "0.5",
+          },
+          Object {
+            "label": "1",
+            "testID": undefined,
+            "textColor": undefined,
+            "value": "1",
+          },
+          Object {
+            "label": "1.5",
+            "testID": undefined,
+            "textColor": undefined,
+            "value": "1.5",
+          },
+          Object {
+            "label": "2",
+            "testID": undefined,
+            "textColor": undefined,
+            "value": "2",
+          },
+        ]
+      }
+      numberOfLines={1}
+      onChange={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
 </View>
 `;
