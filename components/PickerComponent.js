@@ -10,7 +10,12 @@ const PickerComponent = ({items, value, setValue}) => {
       selectedValue={value}
       onValueChange={(itemValue, itemIndex) => setValue(itemValue)}>
       {items.map((d, i) => (
-        <Picker.Item key={d + i} label={d.toString()} value={d.toString()} />
+        <Picker.Item
+          //color="white"
+          key={d + i}
+          label={d.toString()}
+          value={d.toString()}
+        />
       ))}
     </Picker>
   );
